@@ -22,6 +22,7 @@ describe('GET /products', function () {
       .get('/products');
 
    // assert
+
    expect(response.status).to.be.equal(200);
    expect(response.body).to.have.deep.members(listOfProducts);
    
