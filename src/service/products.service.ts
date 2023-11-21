@@ -3,8 +3,9 @@ import { Product } from '../types/Product';
 import { ServiceResponse } from '../types/ServiceResponse';
 
 async function insertNew(product: Product): Promise<ServiceResponse<Product>> {
-  const newProduct = await ProductModel.create(product);
-  return { status: 201, data: newProduct.dataValues };
+  const { dataValues } = await ProductModel.create(product);
+  const { id, name, price } = dataValues;
+  return { status: 201, data: { id, name, price } };
 }
 
 export default {

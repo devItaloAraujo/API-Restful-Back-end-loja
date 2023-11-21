@@ -19,6 +19,6 @@ describe('POST /products', function () {
 
     // assert
     expect(response.status).to.be.equal(201);
-    // expect(response.body).to.have.key('id');
+    expect(response.body).to.have.all.keys('id', 'name', 'price');
   });
 });
