@@ -15,7 +15,7 @@ describe('POST /products', function () {
      //act
      const response = await chai.request(app)
        .post('/products')
-       .send(validProduct)
+       .send(validProduct);
 
     // assert
     expect(response.status).to.be.equal(201);

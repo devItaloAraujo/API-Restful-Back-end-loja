@@ -7,6 +7,12 @@ async function insertNew(req: Request, res: Response): Promise<Response | void> 
   return res.status(status).json(data);
 }
 
+async function findAll(req: Request, res: Response): Promise<Response | void> {
+  const { status, data } = await productsService.findAll();
+  return res.status(status).json(data);
+}
+
 export default {
   insertNew,
+  findAll,
 };
