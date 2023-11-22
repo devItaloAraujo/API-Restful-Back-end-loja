@@ -1,7 +1,7 @@
 export type User = {
-  id: number;
+  id?: number;
   username: string;
-  vocation: string;
-  level: number;
+  vocation?: string;
+  level?: number;
   password: string;
 };
