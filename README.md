@@ -1,4 +1,4 @@
-# Projeto API RESTFUL: TrybeSmith
+# Projeto API RESTFUL: Loja do Ferreiro
 
 ## Contexto
 
