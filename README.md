@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Este projeto é uma API seguindo o padrão REST de back-end no formato CRUD. Trata-se de um app de admnistração simplificada dos itens de inventário de uma loja, seus pedidos e também login de usuários com autenticação com o banco de dados. É possível acessar endpoints para listar, adicionar e deletar pedidos e produtos.
+Este projeto é uma API seguindo o padrão REST de back-end no formato CRUD. Trata-se de um app de administração simplificada dos itens de inventário de uma loja, seus pedidos e também login de usuários com autenticação com o banco de dados. É possível acessar endpoints para listar, adicionar e deletar pedidos e produtos.
 
 Os dados da loja são salvos em um banco de dados SQL em um contâiner do docker enquanto o back-end para fornecer os endpoints ficam em outro, os dois são orquestrados pelo docker-compose e conectados pela biblioteca MySQL2 do Node.
 
